@@ -43,11 +43,11 @@
                                     </td>
                                     <td class="border-bottom-0">
                                         <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
+                                            <span class="">Low</span>
                                         </div>
                                     </td>
                                     <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
+                                        <h5 class="fw-semibold mb-0">$3.9</h5>
                                     </td>
                                 </tr>
                                 <tr>
@@ -63,11 +63,11 @@
                                     </td>
                                     <td class="border-bottom-0">
                                         <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-secondary rounded-3 fw-semibold">Medium</span>
+                                            <span class="">Medium</span>
                                         </div>
                                     </td>
                                     <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
+                                        <h5 class="fw-semibold mb-0">$24.5k</h5>
                                     </td>
                                 </tr>
                                 <tr>
@@ -83,11 +83,11 @@
                                     </td>
                                     <td class="border-bottom-0">
                                         <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-danger rounded-3 fw-semibold">High</span>
+                                            <span class="">High</span>
                                         </div>
                                     </td>
                                     <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
+                                        <h5 class="fw-semibold mb-0 ">$12.8k</h5>
                                     </td>
                                 </tr>
                                 <tr>
@@ -103,11 +103,11 @@
                                     </td>
                                     <td class="border-bottom-0">
                                         <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
+                                            <span class="">Critical</span>
                                         </div>
                                     </td>
                                     <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
+                                        <h5 class="fw-semibold mb-0">$2.4k</h5>
                                     </td>
                                 </tr>
                             </tbody>

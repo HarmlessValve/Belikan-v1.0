@@ -8,111 +8,57 @@
             <div class="card w-100">
                 <div class="card-body p-4">
                     <h5 class="card-title fw-semibold mb-4">Tambah Stock Ikan</h5>
-                    <div class="table-responsive">
-                        <table class="table text-nowrap mb-0 align-middle">
-                            <thead class="text-dark fs-4">
-                                <tr>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Id</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Ikan</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Variant Berat</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Stock</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Tambah Stock Ikan</h6>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">1</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                                        <span class="fw-normal">Web Designer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Elite Admin</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="">Low</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Stock" min="0" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">2</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Real Homes WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="">Medium</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Stock" min="0" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">3</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="">High</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Stock" min="0" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">4</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                                        <span class="fw-normal">Frontend Engineer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="">Critical</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Stock" min="0" />
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <form action="{{ route('produk.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="table-responsive">
+                            <table class="table text-nowrap mb-0 align-middle">
+                                <thead class="text-dark fs-4">
+                                    <tr>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Ikan</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Gambar</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Variant Berat</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Tambah Stock Ikan</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Harga Ikan</h6>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border-bottom-0">
+                                            <input type="text" class="form-control fw-semibold" placeholder="Nama Ikan" name="nm_produk" />
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <input type="file" class="form-control fw-semibold mt-2" name="gambar_produk" accept="image/*" />
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <div class="input-group w-50">
+                                                <input type="number" class="form-control fw-semibold" placeholder="Tambah" min="0" name="variant" />
+                                                <span class="input-group-text bg-primary text-light">Gram</span>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Stock" min="0" name="stok_produk" />
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control fw-semibold mb-0" placeholder="Tambah Harga" min="0" step="0.01" name="harga_produk" />
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
