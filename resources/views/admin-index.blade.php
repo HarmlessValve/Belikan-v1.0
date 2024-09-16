@@ -19,6 +19,9 @@
                     <h6 class="fw-semibold mb-0">Ikan</h6>
                   </th>
                   <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Gambar</h6>
+                  </th>
+                  <th class="border-bottom-0">
                     <h6 class="fw-semibold mb-0">Variant Berat</h6>
                   </th>
                   <th class="border-bottom-0">
@@ -27,89 +30,35 @@
                   <th class="border-bottom-0">
                     <h6 class="fw-semibold mb-0">Harga</h6>
                   </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Aksi</h6>
+                  </th>
                 </tr>
               </thead>
               <tbody>
+                @foreach($produk as $item)
                 <tr>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">1</h6>
+                  <td>{{ $item->id_produk }}</td>
+                  <td>{{ $item->nm_produk }}</td>
+                  <td>
+                    @if($item->gambar_produk)
+                    <img src="{{ asset('images/' . $item->gambar_produk) }}" alt="{{ $item->nm_produk }}" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover;">
+                    @else
+                    <span>Belum ada gambar</span>
+                    @endif
                   </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                    <span class="fw-normal">Web Designer</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Elite Admin</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
+                  <td>{{ $item->variant }}g</td>
+                  <td>{{ $item->stok_produk }}</td>
+                  <td>Rp. {{ number_format($item->harga_produk, 3, '.', ',') }}</td> <!-- Format harga -->
+                  <td>
+                    <form action="{{ route('produk.destroy', $item->id_produk) }}" method="POST">
+                      @csrf
+                      @method('DELETE')
+                      <button type="submit" class="btn btn-danger btn-sm w-50">Delete</button>
+                    </form>
                   </td>
                 </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">2</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                    <span class="fw-normal">Project Manager</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Real Homes WP Theme</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-secondary rounded-3 fw-semibold">Medium</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">3</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                    <span class="fw-normal">Project Manager</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-danger rounded-3 fw-semibold">High</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">4</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                    <span class="fw-normal">Frontend Engineer</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
-                  </td>
-                </tr>
+                @endforeach
               </tbody>
             </table>
           </div>

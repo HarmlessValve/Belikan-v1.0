@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('tb_produk', function (Blueprint $table){
             $table->increments('id_produk');
             $table->string('nm_produk');
-            $table->string('variant');
+            $table->string('gambar_produk');  
+            $table->integer('variant');
             $table->integer('stok_produk');
-            $table->integer('harga_produk');
+            $table->decimal('harga_produk');
         });   
     }
 

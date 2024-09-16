@@ -12,8 +12,7 @@
 
 <body>
   <!--  Body Wrapper -->
-  <div class="page-wrapper bg-dark" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6"
-    data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+  <div class="page-wrapper" id="main-wrapper" style="background-image: url('bg-admin.png'); background-size: cover;">
     <div
       class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
       <div class="d-flex align-items-center justify-content-center w-100">
@@ -21,21 +20,20 @@
           <div class="col-md-8 col-lg-6 col-xxl-3">
             <div class="card mb-0">
               <div class="card-body">
-                <a href="{{ url('/') }}" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="{{ asset('assets/images/logos/dark-logo.svg') }}" width="180" alt="">
+                <a class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="logo.png" width="180" alt="">
                 </a>
                 <form>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama</label>
+                    <label for="exampleInputEmail1" class="form-label"><h5>Nama</h5></label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="exampleInputPassword1" class="form-label"><h5>Password</h5></label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                  <a href="{{ url('authentication-register') }}"
-                    class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Daftar</a>
-                  <a href="{{ url('/') }}" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Masuk</a>
+                  <a href="{{ url('admin-signup') }}" class="btn btn-danger w-100 py-8 fs-4 mb-3 rounded-2"><h4>Daftar</h4></a>
+                  <a href="{{ url('/') }}" class="btn btn-danger w-100 py-8 fs-4 mb-2 rounded-2"><h4>Masuk</h4></a>
                 </form>
               </div>
             </div>
