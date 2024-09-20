@@ -75,6 +75,6 @@ class ProdukController extends Controller
         // Hapus produk dari database
         $produk->delete();
 
-        return redirect()->route('produk.index')->with('success', 'Produk berhasil dihapus');
+        return redirect()->route('admin-index')->with('success', 'Produk berhasil dihapus');
     }
 }

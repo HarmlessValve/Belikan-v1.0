@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_admin', function (Blueprint $table){
+        Schema::create('tb_admin', function (Blueprint $table) {
             $table->increments('id_admin');
             $table->string('nama');
+            $table->string('email');
             $table->string('password');
-        }); 
+        });
     }
 
     /**
