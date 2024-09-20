@@ -10,7 +10,7 @@
         </div>
         @foreach($produk as $item)
         <div class="card m-3 border border-danger rounded" style="width: 20rem; height: 30rem;">
-            <h5>Stock <span class="badge bg-success mt-2">{{ $item->stok_produk > 0 ? 'Tersedia' : 'Habis' }}</span></h5>
+            <h5>Stock <span class="badge bg-success mt-2">{{ $item->stok_produk }}</span></h5>
             <img class="card-img-top mt-1" src="{{ asset('images/' . $item->gambar_produk) }}" alt="{{ $item->nm_produk }}" style="height: 200px; object-fit: cover;">
             <div class="card-body text-center">
                 <h3 class="card-title">{{ $item->nm_produk }}</h3>

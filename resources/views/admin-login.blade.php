@@ -7,14 +7,12 @@
   <title>Modernize Free</title>
   <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/favicon.png') }}" />
   <link rel="stylesheet" href="{{ asset('assets/css/styles.min.css') }}" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" style="background-image: url('bg-admin.png'); background-size: cover;">
-    <div
-      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
       <div class="d-flex align-items-center justify-content-center w-100">
         <div class="row justify-content-center w-100">
           <div class="col-md-8 col-lg-6 col-xxl-3">
@@ -23,18 +21,30 @@
                 <a class="text-nowrap logo-img text-center d-block py-3 w-100">
                   <img src="logo.png" width="180" alt="">
                 </a>
-                <form>
+                <form action="{{ route('actionlogin') }}" method="POST">
+                  @csrf
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"><h5>Nama</h5></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">
+                      <h5>Email</h5>
+                    </label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                   </div>
                   <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label"><h5>Password</h5></label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="password" class="form-label">
+                      <h5>Password</h5>
+                    </label>
+                    <input type="password" class="form-control" id="password" name="password" required>
                   </div>
-                  <a href="{{ url('admin-signup') }}" class="btn btn-danger w-100 py-8 fs-4 mb-3 rounded-2"><h4>Daftar</h4></a>
-                  <a href="{{ url('/') }}" class="btn btn-danger w-100 py-8 fs-4 mb-2 rounded-2"><h4>Masuk</h4></a>
+                  <button type="submit" class="btn btn-danger w-100 py-8 fs-4 mb-3 rounded-2">
+                    <h4>Masuk</h4>
+                  </button>
+                  <a href="{{ route('admin.signup') }}" class="btn btn-danger w-100 py-8 fs-4 mb-2 rounded-2">
+                    <h4>Daftar</h4>
+                  </a>
                 </form>
+                @if (Session::has('error'))
+                <div class="alert alert-danger mt-3">{{ Session::get('error') }}</div>
+                @endif
               </div>
             </div>
           </div>
