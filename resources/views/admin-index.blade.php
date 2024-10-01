@@ -3,6 +3,14 @@
 @section('content-admin')
 
 <div class="container-fluid">
+
+  @if(session('success'))
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ session('success') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  @endif
+
   <div class="row">
     <div class="col-lg-8 w-100 d-flex align-items-stretch">
       <div class="card w-100">
@@ -51,11 +59,14 @@
                   <td>{{ $item->stok_produk }}</td>
                   <td>Rp. {{ number_format($item->harga_produk, 3, '.', ',') }}</td> <!-- Format harga -->
                   <td>
-                    <form action="{{ route('produk.destroy', $item->id_produk) }}" method="POST">
-                      @csrf
-                      @method('DELETE')
-                      <button type="submit" class="btn btn-danger btn-sm w-50">Delete</button>
-                    </form>
+                    <div class="d-flex justify-content-left">
+                      <form action="{{ route('produk.destroy', $item->id_produk) }}" method="POST" class="me-2">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm w-100">Hapus</button>
+                      </form>
+                      <a href="{{ route('produk.edit', ['id_produk' => $item->id_produk]) }}" class="btn btn-warning btn-sm w-25">Edit</a>
+                    </div>
                   </td>
                 </tr>
                 @endforeach

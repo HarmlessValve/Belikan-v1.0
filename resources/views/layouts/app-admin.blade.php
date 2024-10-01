@@ -38,7 +38,7 @@
                                 <span>
                                     <i class="ti ti-layout-dashboard"></i>
                                 </span>
-                                <span class="hide-menu">Daftar Ikan</span>
+                                <span class="hide-menu">Daftar Produk</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -46,15 +46,7 @@
                                 <span>
                                     <i class="ti ti-layout-dashboard"></i>
                                 </span>
-                                <span class="hide-menu">Tambah Stock</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link text-decoration-none" aria-expanded="false" href="/admin-daftar">
-                                <span>
-                                    <i class="ti ti-layout-dashboard"></i>
-                                </span>
-                                <span class="hide-menu">Daftar Pesanan</span>
+                                <span class="hide-menu">Tambah Produk</span>
                             </a>
                         </li>
                     </ul>
@@ -80,7 +72,7 @@
                         <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
                             <form action="{{ route('actionlogout') }}" method="POST" style="display: inline;">
                                 @csrf
-                                <button type="submit" class="btn btn-primary">Logout</button>
+                                <button type="submit" class="btn btn-danger">Logout</button>
                             </form>
                             <li class="nav-item dropdown">
                                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
@@ -101,6 +93,7 @@
     <script src="{{ asset('assets/js/sidebarmenu.js') }}"></script>
     <script src="{{ asset('assets/js/app.min.js') }}"></script>
     <script src="{{ asset('assets/libs/simplebar/dist/simplebar.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

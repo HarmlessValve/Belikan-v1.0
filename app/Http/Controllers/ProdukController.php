@@ -52,11 +52,51 @@ class ProdukController extends Controller
             'nm_produk' => $validated['nm_produk'],
             'variant' => $validated['variant'],
             'stok_produk' => $validated['stok_produk'],
-            'harga_produk' => number_format($validated['harga_produk'], 3, '.', ''), // Memformat harga
-            'gambar_produk' => $imageName // Simpan nama file gambar
+            'harga_produk' => number_format($validated['harga_produk'], 0, ',', '.'),
+            'gambar_produk' => $imageName
         ]);
 
         return redirect()->route('admin-stock')->with('success', 'Produk berhasil ditambahkan!');
+    }
+
+    public function edit($id_produk)
+    {
+        $produk = ModelProduk::findOrFail($id_produk);
+        return view('admin-update', compact('produk'));
+    }
+
+    public function update(Request $request, $id_produk)
+    {
+        $validated = $request->validate([
+            'nm_produk' => 'required|string|max:255',
+            'variant' => 'nullable|numeric|min:0',
+            'stok_produk' => 'nullable|numeric|min:0',
+            'harga_produk' => 'nullable|numeric|min:0',
+            'gambar_produk' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $produk = ModelProduk::findOrFail($id_produk);
+
+        if ($request->hasFile('gambar_produk')) {
+            // Hapus gambar lama
+            if ($produk->gambar_produk) {
+                $imagePath = public_path('images/' . $produk->gambar_produk);
+                if (file_exists($imagePath)) {
+                    unlink($imagePath);
+                }
+            }
+            $imageName = time() . '.' . $request->gambar_produk->extension();
+            $request->gambar_produk->move(public_path('images'), $imageName);
+            $produk->gambar_produk = $imageName;
+        }
+
+        $produk->nm_produk = $validated['nm_produk'];
+        $produk->variant = $validated['variant'];
+        $produk->stok_produk = $validated['stok_produk'];
+        $produk->harga_produk = number_format($validated['harga_produk'], 0, ',', '.');
+        $produk->save();
+
+        return redirect()->route('admin-index')->with('success', 'Produk berhasil diupdate!');
     }
 
     public function destroy($id_produk)
