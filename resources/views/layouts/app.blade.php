@@ -54,11 +54,11 @@
     <footer class="text-center text-lg-start bg-body-tertiary text-dark" id="kontak">
         <!-- Section: Links  -->
         <section>
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-center text-md-start mt-6">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4  mt-3">
                         <!-- Content -->
                         <img src="logo.png" width="175" height="60" alt="">
                     </div>
@@ -67,7 +67,7 @@
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Kontak</h6>
+                        <h6 class="text-uppercase fw-bold mb-4 mt-3">Kontak</h6>
                         <p><i class="fas fa-home me-3"></i>Jember, jl. sriwijaya 2</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
@@ -75,11 +75,11 @@
                         </p>
                         <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                         <p><i class="fab fa-instagram me-3"></i>@belikan.jember</p>
-                    </div>>
+                    </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4  mt-3">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Link
@@ -100,7 +100,7 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4 mt-3">
                             Lokasi
                         </h6>
                         <div class="ratio ratio-16x9">
@@ -122,7 +122,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">sinovasi.com</a>
         </div>
         <!-- Copyright -->
     </footer>
