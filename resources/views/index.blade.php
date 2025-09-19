@@ -60,48 +60,27 @@
             <h1 class="mb-3" style="font-size:35px">Produk Terbaik</h1>
             <h5 class="mb-5">produk unggulan kami.</h5>
         </div>
-        <div class="card m-3 border border-danger rounded" style="width: 20rem; height: 35rem;">
-            <h5>Stock <span class="badge bg-danger mt-2">Habis</span></h5>
-            <img class="card-img-top mt-1" src="udan.png" alt="Card image cap">
+        <div class="card m-3 border border-danger rounded" style="width: 20rem;">
+            <img class="card-img-top mt-3" src="udang.jpg" alt="Card image cap">
             <div class="card-body text-center">
-                <h3 class="card-title">IWAK</h3>
-                <h6 class="card-text">DeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsi</h6>
-                <select class="form-select form-select-lg mt-2 border border-danger rounded" style="color:#0a0a0a; width:200px">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <h3 class="card-title">Udang</h3>
+                <h6 class="card-text">Nikmati kesegaran udang berkualitas terbaik dari Jember!</h6>
                 <button type="button" class="btn btn-danger btn-lg rounded mt-2" style="width:200px;">Tambahkan Ke Keranjang</button>
             </div>
         </div>
-        <div class="card m-3 border border-danger rounded" style="width: 20rem; height: 35rem;">
-            <h5>Stock <span class="badge bg-success mt-2">Tersedia</span></h5>
-            <img class="card-img-top mt-1" src="udan.png" alt="Card image cap">
+        <div class="card m-3 border border-danger rounded" style="width: 20rem;">
+            <img class="card-img-top mt-3" src="gurita.jpg" alt="Card image cap">
             <div class="card-body text-center">
-                <h3 class="card-title">IWAK</h3>
-                <h6 class="card-text">DeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsi</h6>
-                <select class="form-select form-select-lg mt-2 border border-danger rounded" style="color:#0a0a0a; width:200px">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <h3 class="card-title">Gurita</h3>
+                <h6 class="card-text">Nikmati kesegaran Gurita berkualitas terbaik dari Jember!</h6>
                 <button type="button" class="btn btn-danger btn-lg rounded mt-2" style="width:200px;">Tambahkan Ke Keranjang</button>
             </div>
         </div>
-        <div class="card m-3 border border-danger rounded" style="width: 20rem; height: 35rem;">
-            <h5>Stock <span class="badge bg-danger mt-2">Habis</span></h5>
-            <img class="card-img-top mt-1" src="udan.png" alt="Card image cap">
+        <div class="card m-3 border border-danger rounded" style="width: 20rem;">
+            <img class="card-img-top mt-3" src="Dori.jpg" alt="Card image cap">
             <div class="card-body text-center">
-                <h3 class="card-title">IWAK</h3>
-                <h6 class="card-text">DeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsiDeskripsi</h6>
-                <select class="form-select form-select-lg mt-2 border border-danger rounded" style="color:#0a0a0a; width:200px">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <h3 class="card-title">Dori</h3>
+                <h6 class="card-text">Nikmati kesegaran Dori berkualitas terbaik dari Jember!</h6>
                 <button type="button" class="btn btn-danger btn-lg rounded mt-2" style="width:200px;">Tambahkan Ke Keranjang</button>
             </div>
         </div>
@@ -126,42 +105,39 @@
                             <!-- Single item -->
                             <div class="carousel-item active">
                                 <div class="mt-5 mb-4">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                    <img src="person.png"
                                         class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
                                         height="100" />
                                 </div>
-                                <p class="text-muted mb-0">- Anna Morian</p>
+                                <p class="text-muted mb-0">- Shintya</p>
                                 <h5 class="mx-4 mx-md-5 font-dark">
-                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
-                                    iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                                    "Layanan nya cepat dan ramah, produk yang di antar sampai tujuan dengan selamat"
                                 </h5>
                             </div>
 
                             <!-- Single item -->
                             <div class="carousel-item">
                                 <div class="mt-5 mb-4">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                                    <img src="person.png"
                                         class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
                                         height="100" />
                                 </div>
-                                <p class="text-muted mb-0">- Teresa May</p>
+                                <p class="text-muted mb-0">- Vera</p>
                                 <h5 class=" mx-4 mx-md-5">
-                                    "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-                                    repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing elit."
+                                    "Produknya sudah sampai rumah, masih beku. waktu dimasak masih dalam keadaan segar. Terbaik deh"
                                 </h5>
                             </div>
 
                             <!-- Single item -->
                             <div class="carousel-item">
                                 <div class="mt-5 mb-4">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                                    <img src="person.png"
                                         class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
                                         height="100" />
                                 </div>
-                                <p class="text-muted mb-0">- Kate Allise</p>
+                                <p class="text-muted mb-0">- Danie</p>
                                 <h5 class=" mx-4 mx-md-5">
-                                    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur est laborum neque cupiditate assumenda in maiores."
+                                    "Pengantaran cepat, ikannya sampai kerumah dalam keadaan segar."
                                 </h5>
                             </div>
                         </div>

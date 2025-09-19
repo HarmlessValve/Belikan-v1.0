@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>BELIKAN jember</title>
@@ -73,8 +74,8 @@
                             <i class="fas fa-envelope me-3"></i>
                             info@example.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fab fa-instagram me-3"></i>@belikan.jember</p>
+                        <p><i class="fas fa-phone me-3"></i> +62 851-5517-9665</p>
+                        <p><i class="fas fa-phone me-3"></i> +62 813-3670-0504</p>
                     </div>
                     <!-- Grid column -->
 
@@ -85,17 +86,15 @@
                             Link
                         </h6>
                         <p>
-                            <a href="/" class="text-reset">Beranda</a>
+                            <a href="/" class=" text-reset link-underline-opacity-0 link-dark link-offset-2 ">Beranda</a>
                         </p>
                         <p>
-                            <a href="/#layanan" class="text-reset">Layanan</a>
+                            <a href="/produk" class=" text-reset link-underline-opacity-0 link-dark link-offset-2 ">Produk</a>
                         </p>
                         <p>
-                            <a href="/produk" class="text-reset">Produk</a>
+                            <a href="/keranjang" class=" text-reset link-underline-opacity-0 link-dark link-offset-2 ">Keranjang</a>
                         </p>
-                        <p>
-                            <a href="/keranjang" class="text-reset">Keranjang</a>
-                        </p>
+                        <p><i class="fab fa-instagram me-2"></i><a href="https://www.instagram.com/belikan.jember?igsh=MTh2MDE4eHBvZmZyMA==" class=" text-reset link-underline-opacity-0 link-dark link-offset-2 ">belikan.jember</a></p>
                     </div>
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -103,12 +102,13 @@
                         <h6 class="text-uppercase fw-bold mb-4 mt-3">
                             Lokasi
                         </h6>
-                        <div class="ratio ratio-16x9">
+                        <div class="ratio ratio-4x3">
                             <iframe
                                 class="shadow-1-strong rounded"
-                                src="https://maps.app.goo.gl/cbXSmNt3p4NTDrxo7"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3949.183887073232!2d113.721182!3d-8.184223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTEnMDMuMiJTIDExM8KwNDMnMTYuMyJF!5e0!3m2!1sid!2sid!4v1728965667356!5m2!1sid!2sid"
                                 title="Maps"
-                                allowfullscreen></iframe>
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                     <!-- Grid column -->
