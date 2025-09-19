@@ -24,6 +24,7 @@
                                 <thead class="text-dark fs-4">
                                     <tr>
                                         <th class="border-bottom-0">Ikan</th>
+                                        <th class="border-bottom-0"></th>
                                         <th class="border-bottom-0">Gambar</th>
                                         <th class="border-bottom-0">Variant Berat</th>
                                         <th class="border-bottom-0">Stock Ikan</th>
@@ -37,10 +38,12 @@
                                             <input type="text" class="form-control fw-semibold" name="nm_produk" value="{{ $produk->nm_produk }}" />
                                         </td>
                                         <td class="border-bottom-0">
-                                            <input type="file" class="form-control fw-semibold mt-2" name="gambar_produk" accept="image/*" />
                                             @if($produk->gambar_produk)
-                                            <img src="{{ asset('images/' . $produk->gambar_produk) }}" alt="Gambar Produk" width="100">
+                                            <img src="{{ asset('images/' . $produk->gambar_produk) }}" alt="Gambar Produk" width="100" class="mt-2">
                                             @endif
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <input type="file" class="form-control fw-semibold" name="gambar_produk" accept="image/*" />
                                         </td>
                                         <td class="border-bottom-0">
                                             <div class="input-group w-100">
@@ -52,7 +55,7 @@
                                             <input type="number" class="form-control fw-semibold mb-0" name="stok_produk" value="{{ $produk->stok_produk }}" />
                                         </td>
                                         <td class="border-bottom-0">
-                                            <input type="number" class="form-control fw-semibold mb-0" name="harga_produk" value="{{ $produk->harga_produk }}" step="00.1" />
+                                            <input type="number" class="form-control fw-semibold mb-0" name="harga_produk" step="00.1" />
                                         </td>
                                         <td class="border-bottom-0">
                                             <button type="submit" class="btn btn-primary">Update</button>
